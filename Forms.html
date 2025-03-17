@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+background-color:#f4f4f4;
+}
+
+.container{
+width:350px;
+margin:50px auto;
+padding:20px;
+background-color:pink;
+border:8px solid #fff;
+box-shadow:0 0 10px rgba(0,0,0,0.1)
+}
+.sign-up{
+width:100%;
+padding:20px;
+color:green;
+}
+
+ h1{
+text-align:center;
+margin-bottom:20px;
+}
+.form-group{
+margin-bottom:20px;
+}
+
+label{
+display:block;
+margin-bottom:10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="password"],
+input[type="number"]{
+width:80%;
+padding:20px;
+border:1px solid #ccc;
+border-radius:20px;
+}
+button[type="submit"]{
+width:100%;
+padding:10px;
+background-color:#4CAF50;
+color:#fff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+button[type="submit"]hover{
+background-color:#3e8e41;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="password"],
+input[type="search"],
+input[type="number"]{
+width:80%;
+padding:20px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+button[type="submit"]{
+width:100%;
+padding:10px;
+background-color:#4CAF50;
+color:#fff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button[type="submit"]hover{
+background-color:#3e8e41;
+}
+
+
+
+
+
+</style>
+<div>
+
+	  <div class="container">
+	  <div class="sign-up">
+	  <h1>Sign up</h1>
+	  </div>
+	  <form>
+	  <div class="form-group">
+	  <label for="username:"></label>
+	  <input type="text" placeholder="Your name" required>
+	  </div>
+	  <div class="form-group">
+	  <label for="email:"></label>
+	  <input type="email" placeholder="Your email" required>
+	</div>
+	  <div class="form-group">
+	  <label for="phonenumber:"></label>
+	  <input type="number" placeholder=" Phonenumber" required>
+	</div>
+		  <div class="form-group">
+	  <label for="password:"></label>
+	  <input type="password" placeholder=" Password" required>
+	  </div>
+	  	  <div class="form-group">
+	  <label for="cofirmpassword:"></label>
+	  <input type="password" placeholder=" Cofirmpassword" required>
+</div>
+	  	
+
+<button type="submit">Sign up</button>
+
+<script>
+
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "" || isNan(X) == False) {
+    alert("the input is empty or the input is invalid");
+    return false;
+  }
+}
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
