@@ -1,0 +1,332 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(170,170,170,0.4);
+}
+
+.hovereffect h2, .hovereffect img {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hovereffect:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  padding: 50px;
+}
+
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background-color: rgba(0,0,0,0.4);
+}
+#intro-section, #ad-section{
+	background:#f9f9f9;
+	padding:70px 0;
+}
+#myTab{
+	font-size:1.6rem;
+}
+#whyniit, #abt-niit{
+	padding:70px 0;
+
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #09369a;
+}
+.footer span a{
+  color:#fff;
+}
+.carousel-caption span {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    left:0;
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+.main-text
+{
+    position: absolute;
+    top: 120px;
+	right:0;
+	width: 96.66666666666666%;
+    color: #FFF;
+}
+.error-message {
+    color: #ff0000;
+    font-family: 'roboto_condensedregular';
+    font-size: 11px;
+    display: none;
+}
+.btn {
+    width: 300px;
+    padding: 7px 0;
+    background: #09359a;
+    color: #fff;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    font-family: gotham;
+    font-size: 0.8em;
+    float: left;
+    cursor: pointer;
+}
+.formTitle {
+    background: #09359a none repeat scroll 0 0;
+    left: 17%;
+    position: absolute;
+    top: -40px;
+    width: 403px;
+    z-index: 99;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25em;
+}
+.thankyouText {
+              font-family: roboto;
+              font-size: .8em;
+              color: #58585a;
+          }
+.form1 {
+    background: #4782c4 none repeat scroll 0 0;
+    left: 10%;
+    margin-left: 136px;
+    position: absolute;
+    top: 25px;
+    width: 340px;
+    padding: 35px;
+    z-index: 99;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.topSpace {
+    margin-top: 30px !important;
+}
+.spcCompanies {
+    margin-left: 10px !important;
+}
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.container ul li {
+    display: inline;
+    text-align: left;
+}
+
+
+@media (max-width: 576px) { 
+      .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; 
+    line-height: 25px;
+    background-color: #09369a;
+}
+      .row
+    {
+    margin-right: 1px;
+    margin-left: 1px;
+    } 
+      .btn {
+    width: 302px;
+} 
+}
+@media (max-width: 768px) {
+    .main-text {
+        display: none;
+    }  
+
+.apply-button  {
+    display: block;
+    font-size: 1em;
+    background: #09369a;
+    padding: 5px 5px;
+    float: right;
+    font-family: gotham_boldregular;
+    font-size: 1em;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+} 
+.btn 
+{
+    font-size: 0.8em;
+    padding: 4px 0;
+	width: 250px;
+} 
+.form1 {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    top: 52px;
+    padding: 30px 10px 15px;
+    display: none;
+}
+.topSpace {
+    margin-top: 10px !important;
+}
+.spcCompanies {
+    margin-left: 0 !important;
+}
+
+} 
+@media (max-width: 720px) {
+.formTitle {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    top: 0px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.25em;
+}
+.shortmobilelabel {
+  font-family: roboto;
+  font-size: 1.1em;
+  color:blue;
+  float: inherit;
+  font-weight: normal;
+  margin-top: 40px;
+  padding-left: 0px;
+  text-align:center;
+          }
+.form-row1{       
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+}
+
+@media (min-width: 576px) {
+    .btn {
+        font-size: 0.8em;
+        padding: 4px 0;
+        width: 302px;
+        height: 40px;
+    }     
+}
+@media (min-width: 768px) {
+#contact-us{
+	display:none;
+}
+.shortlabel   {
+        padding-left: 20px;
+    }
+ .btn {
+        width: 344px;      
+    } 
+ .formTitle 
+{
+    left:16%;
+    width:442px;
+    }
+}
+@media (min-width: 992px) {   
+}
+
+@media (min-width: 1024px) {
+   
+}
+
+@media (max-width: 992px) {
+    .form1 {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    top: 78px;
+    padding: 30px 10px 15px;
+    display: none;
+}    
+}
+@media (max-width: 1200px) {
+}
